@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/gardenLogFragment"
+        android:name="com.example.gardeningjournalapp.fragments.GardenLogFragment"
+        android:label="fragment_garden_log"
+        tools:layout="@layout/fragment_garden_log" >
+        <action
+            android:id="@+id/action_gardenLogFragment_to_plantDetailsFragment"
+            app:destination="@id/plantDetailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_gardenLogFragment_to_homeFragment2"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantDetailsFragment"
+        android:name="com.example.gardeningjournalapp.fragments.PlantDetailsFragment"
+        android:label="fragment_plant_details"
+        tools:layout="@layout/fragment_plant_details" >
+        <action
+            android:id="@+id/action_plantDetailsFragment_to_gardenLogFragment2"
+            app:destination="@id/gardenLogFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="plantId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.gardeningjournalapp.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_gardenLogFragment2"
+            app:destination="@id/gardenLogFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_logPlantFragment"
+            app:destination="@id/logPlantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logPlantFragment"
+        android:name="com.example.gardeningjournalapp.fragments.LogPlantFragment"
+        android:label="fragment_log_plant"
+        tools:layout="@layout/fragment_log_plant" >
+        <action
+            android:id="@+id/action_logPlantFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

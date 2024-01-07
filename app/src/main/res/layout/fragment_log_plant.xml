@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LogPlantFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Plant Name -->
+        <TextView
+            android:id="@+id/tvPlantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plant Name" />
+
+        <EditText
+            android:id="@+id/etPlantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter plant name" />
+
+        <!-- Plant Type -->
+        <TextView
+            android:id="@+id/tvPlantType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plant Type" />
+
+        <EditText
+            android:id="@+id/etPlantType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter plant type" />
+
+        <TextView
+            android:id="@+id/tvWateringFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watering Frequency" />
+
+        <EditText
+            android:id="@+id/etWateringFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter frequency in days" />
+
+        <!-- Planting Date -->
+        <TextView
+            android:id="@+id/tvPlantingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planting Date" />
+
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date" />
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No date selected" />
+
+        <!-- LinearLayout for buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
