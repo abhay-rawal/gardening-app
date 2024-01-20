@@ -36,3 +36,17 @@ This app uses the MVVM (Model-View-ViewModel) architecture, ensuring a clean sep
 - **Room Database:** For persisting plant data.
 - **Coroutines:** For performing asynchronous tasks efficiently.
 
+### Screen shots
+1. Home Screen : <br>
+   ![HomeScreen](https://github.com/abhay-rawal/gardening-app/blob/main/app/src/main/res/drawable/Home.png) <br>
+2. Create Plant : <br>
+   ![CreatePlant](https://github.com/abhay-rawal/gardening-app/blob/main/app/src/main/res/drawable/CreatePlant.png) <br>
+3. Calander View: <br>
+   ![CalanderView](https://github.com/abhay-rawal/gardening-app/blob/main/app/src/main/res/drawable/CalanderView.png) <br>
+4. Garden Log : <br>
+   ![GardenLog](https://github.com/abhay-rawal/gardening-app/blob/main/app/src/main/res/drawable/GardenLog.png) <br>
+5. Plant Details : <br>
+   ![PlantDetails](https://github.com/abhay-rawal/gardening-app/blob/main/app/src/main/res/drawable/PlantDetails.png) <br>
+
+  
+
